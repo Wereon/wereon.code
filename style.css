@@ -207,10 +207,11 @@ body{
     display: inline-block;
     flex-direction: column;
     width: 100%;
-    background-color: #333;
+    background-image: url("BG14.png");
+    background-size: cover;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 70px;
+    top: 40px;
     left: 0px;
   }
 
@@ -767,60 +768,47 @@ letter-spacing: -.015em;
 
 
 .footer{
-    background-color: var(--black);
+    background-image:url("BG14.png") ;
+    background-size: cover;
     position: static;
     margin-top: 0;
-padding:7rem 5rem;
-padding-bottom: 0;
-/* width:100%; */
-/* background-color: #fc9e08; */
+    padding:7rem 5rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .footer-logo._2 {
     width: 166px;
 }
 
+.fa-brands{
+  color: var(--white);
+  font-size: 4.2rem;
+}
+
 .logoline{
+  width: 80vw;
     height: 2px;
 margin-top: 50px;
 margin-bottom: 0;
-background-color: var(--grey);
+background-color: var(--white);
 }
 
 .quicklinks{
     display:grid;
-    grid-template-columns: repeat(4,250px);
-    margin-bottom: 20px;
+    grid-template-columns: repeat(3,120px);
+    gap:1rem;
+    
 }
 
-.quick h1{
-    font-size: 24px;
-    font-weight: 600;
-    font-family: 'Switzer', sans-serif;
-    margin-top: 26px;
-    margin-bottom: 8px ;
-    color: var(--white);
-}
-
-.quick ul{
-    padding: 0;
-}
-
-.quick ul li{
-    list-style: none;
-    margin-bottom: 8px;
-    -webkit-transition: padding .3s;
-    transition: padding .3s;
-    font-family: Poppins,sans-serif;
-    color: var(--grey);
-    font-size: 14px;
-    line-height: 1.5em;
-    font-weight: 500;
-    letter-spacing: -.005em;
-}
-
-.line-140{
-    margin-top:140px;
+.quick{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .foot_line{
@@ -830,22 +818,14 @@ background-color: var(--grey);
 }
 
 .foot_line h2{
-    margin-top: 19px;
     margin-bottom: var(--para);
     font-family: Poppins,sans-serif;
-    color: var(--white);
-    font-size: 16px;
+    color: var(--grey);
+    font-size: 14px;
     line-height: 1.5em;
-    font-weight: 500;
+    font-weight: 400;
 }
 
-
-.foot_line span{
-    font-family: 'Poppins', sans-serif;
-    font-size:14px;
-    font-weight: 500;
-    color: darkgrey;
-}
 
 
   
@@ -1176,24 +1156,33 @@ background-color: var(--grey);
         width: 55px;
       }
 
-      .footer{
-        padding: var(--padding);
-      }
-
-      .quick h1{
-        font-size: var(--heading);
-      }
-
-      .foot_list{
-        font-size: calc(var(--para) -2px);
-        color: var(--grey);
-      }
 
       .quicklinks{
-        display:grid;
-        grid-template-columns: repeat(2,50%);
-        margin-bottom: 20px;
-    }
+        grid-template-columns: repeat(3,70px);
+      }
+    
+      .logoline{
+      
+        height: 2px;
+        background-color: var(--white);
+        margin-top: 3rem;
+      }
+
+      .footer{
+        padding: 0;
+      }
+    
+      .foot_line h2{
+        font-size: 1rem;
+      }
+    
+      .footer-logo._2 {
+        width: 89px;
+        }
+    
+      .fa-brands{
+        font-size: 3rem;
+      }
 
     .foot_line{
 
@@ -1202,10 +1191,6 @@ background-color: var(--grey);
 
     .foot_line h2{
       font-size: calc(var(--para)-2px);
-    }
-    .foot_line span{
-      font-size: calc(var(--para)-2px);
-      color: var(--grey);
     }
   }
 
@@ -1374,21 +1359,27 @@ background-color: var(--grey);
 
 
   .quicklinks{
-    grid-template-columns: repeat(2,250px);
+    grid-template-columns: repeat(3,70px);
   }
 
-  .quick ul li{
-    font-size: 14px;
+  .logoline{
+  
+    height: 2px;
+    background-color: var(--white);
+    margin-top: 3rem;
   }
 
   .foot_line h2{
     font-size: 1rem;
   }
 
-  .foot_line span{
-    font-size: 12px;
-  }
+  .footer-logo._2 {
+    width: 89px;
+    }
 
+  .fa-brands{
+    font-size: 3rem;
+  }
   .timeline{
     position: sticky;
     left:0;
@@ -1404,6 +1395,9 @@ background-color: var(--grey);
     /* animation: none;
     transition: none; */
   }
+
+
+ 
   }
 
 
