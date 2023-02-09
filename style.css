@@ -901,6 +901,8 @@ background-color: var(--white);
     }
 
     .intro{
+      background-size: cover;
+      
         height: 30rem;
         margin: 0;
         padding:var(--padding);
@@ -921,6 +923,7 @@ background-color: var(--white);
 
     .introText p{
       margin-bottom: 2rem;
+      color: var(--white);
       width: 85%;
         font-size: 12px;
        
@@ -1158,7 +1161,7 @@ background-color: var(--white);
 
 
       .quicklinks{
-        grid-template-columns: repeat(3,70px);
+        grid-template-columns: repeat(3,40px);
       }
     
       .logoline{
@@ -1181,7 +1184,7 @@ background-color: var(--white);
         }
     
       .fa-brands{
-        font-size: 3rem;
+        font-size: 2rem;
       }
 
     .foot_line{
