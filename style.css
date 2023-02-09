@@ -37,7 +37,7 @@ body{
 
 
 .nav {
-  position: fixed;
+  position: absolute;
   top:0;
   left: 0;
   height: 70px;
@@ -941,7 +941,7 @@ background-color: var(--white);
       .prevWork{
         /* background-image: url("https://uploads-ssl.webflow.com/61a9d163662d2084d7cbc38f/633ec3fc383d1b6ba6b93e9e_bg-182125hex.webp"); */
         margin-top: 0;
-        height: 35rem;
+        height: 37rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
