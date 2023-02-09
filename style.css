@@ -378,11 +378,10 @@ body{
   }
   
   .logo-icon {
-      height: 6rem;
+      height: 3rem;
       transition: all 0.5s;
       
   }
-
   .approach{
     background-image: url("flip.png");
     background-size: cover;
@@ -1255,6 +1254,10 @@ background-color: var(--white);
     .introText{
       width: 60%;
     }
+
+    .logo-icon{
+      height:3rem;
+      }
 
   .schCall{
     width: 150px;
