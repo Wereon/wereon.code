@@ -51,6 +51,7 @@ body{
  align-items: center;
  justify-content: stretch;
  z-index: 5;
+ padding-left: 2rem;
 }
 
 .nav .nav-header {
