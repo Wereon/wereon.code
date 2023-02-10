@@ -143,7 +143,7 @@ body{
 
   .nav{
     height: 50px;
-    
+    padding-left: 0;
     justify-content: space-between;
   }
   .nav-header{
@@ -1258,6 +1258,7 @@ background-color: var(--white);
 
     .nav{
       height: 5.4rem;
+      padding-left: 0;
     }
 
    .nav .nav-links{
