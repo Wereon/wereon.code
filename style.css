@@ -1095,6 +1095,7 @@ background-color: var(--white);
       }
 
       .work_intro{
+        position: unset;
         /* display: block; */
         width: 80%;
         margin-bottom: 45px;
