@@ -194,26 +194,7 @@ body{
     background-color: white;
   }
 
-  .exp_label::before{
-      position: absolute;
-      content: "";
-      top:-8px;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: white;
 
-  }
-  .exp_label::after{
-      position: absolute;
-      content: "";
-      bottom:-8px;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: white;
-
-  }
   .nav  .nav-links {
     position: absolute;
     display: inline-block;
