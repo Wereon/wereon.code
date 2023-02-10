@@ -48,7 +48,7 @@
     </div>
   </div>
 
-    <div class="intro">
+    <div id="home" class="intro">
         <div class="introText">
             <h1>Empowering <span class="yellow">start-ups</span>
                  with tailored teams</h1>
@@ -118,7 +118,7 @@
         </div>
 
     </div>
-    <div class="approach">
+    <div id="services" class="approach">
         <div class="appText">
             <div class="app_1">
                 <h1>
@@ -212,7 +212,7 @@
             </div>
         </div> 
 </div>
-<div class="working">
+<div id="roadmap" class="working">
     <div class="work_intro left">
       <h1>How does this <span class="yellow">work?</span>  </h1>
       <p>
@@ -298,19 +298,19 @@
 <script>      
 
 const navLinks = document.querySelectorAll(".nav-links a");
-const navCheckbox = document.querySelector("#nav-check");
-    
+
 navLinks.forEach(link => {
-    link.addEventListener("click", scrollToTarget);
+    link.addEventListener("click", function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("data-target");
+    const target = document.getElementById(targetId);
+    target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+    });
 });
 
-function scrollToTarget(e) {
-    e.preventDefault();
-    const targetId = this.dataset.target;
-    const targetDiv = document.getElementById(targetId);
-    targetDiv.scrollIntoView({ behavior: "smooth" });
-}
-    
 
 var items = $(".timeline li"),
 timelineHeight = $(".timeline ul").height(),
