@@ -67,7 +67,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 10px 10px 10px 10px; */
 }
 
 .nav-logo img{
@@ -600,7 +599,7 @@ body{
 }
 
 .work_intro{
-    position: sticky;
+    position: absolute;
     top: 11rem;
     margin-bottom: 1.4rem;
     width: 50%;
