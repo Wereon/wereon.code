@@ -275,7 +275,7 @@ body{
     display: flex;
     align-items: center;
     /* position: relative; */
-    overflow-x: hidden;
+    overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     padding: var(--padding);
@@ -327,7 +327,7 @@ body{
   }
   
   .prevWork{
-    overflow-x: hidden;
+    overflow: hidden;
       background-color: var(--purple);
       display: grid;
       grid-template-columns: 40% 60%;
@@ -405,6 +405,7 @@ body{
     background-image: url("flip.png");
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
     height: 100rem;
     display: flex;
     flex-direction: column;
@@ -525,6 +526,7 @@ body{
 
 
 .practice_info{
+  overflow: hidden;
     background-color: var(--dark-blue);
     padding:var(--padding);
 }
@@ -596,6 +598,7 @@ body{
 .working{
     background-image: url("sng.png");
     /* background-position: fixed; */
+    overflow: hidden;
     background-size: cover;
     padding: var(--padding);
 }
