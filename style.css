@@ -1114,7 +1114,6 @@ background-color: var(--white);
 
       .timeline{
         position: sticky;
-        left:0;
         margin-left: 2rem;
         margin-top: 0;
         justify-content: flex-start;
