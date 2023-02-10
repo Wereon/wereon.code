@@ -866,7 +866,7 @@ background-color: var(--white);
   .left.active{
     transform: translateX(0);
     opacity: 1;
-    position: unset;
+    position: relative;
   }
 
   .brgt{
@@ -1091,14 +1091,15 @@ background-color: var(--white);
       }  
 
       .working{
+        display: block;
         padding: var(--padding);
       }
 
       .work_intro{
-        position: unset;
         /* display: block; */
         width: 80%;
         margin-bottom: 45px;
+        top:2rem; 
         /* animation: none;
         transition: none; */
       }
@@ -1109,6 +1110,7 @@ background-color: var(--white);
 
       .work_intro p{
         width: 95%;
+       
         font-size: 12px;
       }
 
