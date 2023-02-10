@@ -11,6 +11,7 @@
     --light:#90DDF0;
     --grey:#b6b6b6;
     --blue:#2240ff;
+    --blue-2:#0A2342;
     --dark-blue:#0b002e;
     --yellow:#eda13b;
     --purple:#140435;
@@ -37,22 +38,27 @@ body{
 
 
 .nav {
-  position: absolute;
+  position: fixed;
   top:0;
   left: 0;
   height: 70px;
   width: 100%;
-  background-color: var(--black-trans);
+  /* background-image: url("BG14.png"); */
+  /* background-size: contain; */
+  background-color: var(--last);
   color: var(--white); 
-  display: grid;
-  grid-template-columns: 20% 80%;
+ display: flex;
+ align-items: center;
+ justify-content: stretch;
+ z-index: 5;
 }
 
 .nav .nav-header {
   padding: 0;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: center;
+  /* padding-left: 2rem; */
   
 }
 
@@ -64,8 +70,8 @@ body{
 }
 
 .nav-logo img{
-  height: 80px;
-  width: 80px;
+  height: 40px;
+  width: 150px;
 }
 
 .nav .nav-btn {
@@ -73,8 +79,9 @@ body{
 }
 
 .nav  .nav-links {
+  width: 100%;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 80% 20%;
 }
 
 .nav_list{
@@ -84,16 +91,21 @@ body{
   justify-content: center;
 }
 .nav_list ul{
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .nav_list ul li{
+  width: 50%;
   list-style: none;
   font-family: var(--poppin);
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+  align-items: center;
   
 }
 
@@ -130,9 +142,9 @@ body{
 @media (max-width:600px) {
 
   .nav{
-    height: auto;
-    padding: 0;
-    grid-template-columns: 35% 65%;
+    height: 50px;
+    
+    justify-content: space-between;
   }
   .nav-header{
      display: flex;
@@ -140,7 +152,7 @@ body{
   }
 
   .nav-logo img{
-    width: 10rem;
+    width: 6rem;
   }
 
   .nav > .nav-btn {
@@ -210,7 +222,7 @@ body{
     background-size: cover;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 40px;
+    top: 50px;
     left: 0px;
   }
 
@@ -236,18 +248,17 @@ body{
   }
 
   .nav_button a{
-      width: 139px;
+      width: 125px;
       height: 39px;
   }
   .nav  #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
   .nav  #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 150px);
+    height: calc(100vh);
     overflow-y: auto;
   }
 }
-
 
 
 /*section-1*/
@@ -378,7 +389,7 @@ body{
   }
   
   .logo-icon {
-      height: 3rem;
+      height: 6rem;
       transition: all 0.5s;
       
   }
@@ -391,7 +402,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:  5rem;
+    gap:  3rem;
     padding: var(--padding);
 }
 
@@ -450,7 +461,6 @@ body{
 
 .app_card{
     /* height: 600px; */
-    padding-top: 40px;
     width: 100%;
 
 }
@@ -876,8 +886,6 @@ background-color: var(--white);
     position: sticky;
   }
 
-
-
   @media screen and (max-width: 700px) {
 
     :root{
@@ -990,6 +998,10 @@ background-color: var(--white);
         border: none;
         /* margin-left: 16px; */
        
+      }
+
+      .logo-icon{
+        height: 4.5rem;
       }
   
       .approach{
@@ -1244,6 +1256,29 @@ background-color: var(--white);
 
     }
 
+    .nav{
+      height: 5.4rem;
+    }
+
+   .nav .nav-links{
+      grid-template-columns: 70% 30%;
+    }
+    
+    .nav_list ul{
+      width: 80%;
+    }
+
+    .nav_list ul li{
+      width: 60%;
+      font-size: 13px;
+    }
+
+    .nav_button a {
+      height: 25px;
+      width: 127px;
+      font-size: 13px;
+      color: var(--white);
+    }
     .intro{
       height: 40rem;
       align-items: center;
@@ -1306,7 +1341,7 @@ background-color: var(--white);
   .preIconSmall{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:2rem;
+    gap:4rem;
   }
 
   .logo{
@@ -1316,7 +1351,7 @@ background-color: var(--white);
 
 
   .logo-icon{
-    height: 25px;
+    height: 6.2rem;
   }
 
   .approach{
@@ -1431,11 +1466,17 @@ background-color: var(--white);
     }
 
     .line-1,.line-2,.line-3{
-      gap:6%;
+      gap:16%;
     }
        
     .logo-icon{
-      height: 2.5rem;
+      height: 6.9rem;
+    }
+
+
+    .approach {
+      height: 69rem;
+      gap: 0rem;
     }
     .working{
       padding-top: 11rem;
@@ -1444,3 +1485,10 @@ background-color: var(--white);
 
   }
 
+
+
+  @media screen and (min-width: 500px) and (max-width: 700px){
+    .logo-icon{
+      height: 5.5rem;
+    }
+  }
