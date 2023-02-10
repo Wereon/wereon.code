@@ -275,6 +275,7 @@ body{
     display: flex;
     align-items: center;
     /* position: relative; */
+    overflow-x: hidden;
     background-position: center;
     background-repeat: no-repeat;
     padding: var(--padding);
@@ -326,6 +327,7 @@ body{
   }
   
   .prevWork{
+    overflow-x: hidden;
       background-color: var(--purple);
       display: grid;
       grid-template-columns: 40% 60%;
@@ -409,6 +411,7 @@ body{
     justify-content: center;
     align-items: center;
     gap:  3rem;
+    overflow-x: hidden;
     padding: var(--padding);
 }
 
@@ -525,6 +528,7 @@ body{
 .practice_info{
     background-color: var(--dark-blue);
     padding:var(--padding);
+    overflow-x: hidden;
 }
 
 .col-grid-2{
@@ -596,6 +600,7 @@ body{
     /* background-position: fixed; */
     background-size: cover;
     padding: var(--padding);
+    overflow-x: hidden;
 }
 
 .work_intro{
@@ -725,6 +730,7 @@ body{
     text-align: center;
     padding:var(--padding) ;
     position: relative;
+    overflow-x: hidden;
     /* overflow: visible; */
 }
 
@@ -792,6 +798,7 @@ letter-spacing: -.015em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 
